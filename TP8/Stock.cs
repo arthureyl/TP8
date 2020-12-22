@@ -10,6 +10,11 @@ namespace TP8
         private Dictionary<Produit,int> stock_produit;
         private List<IObserver> _observers = new List<IObserver>();
 
+        public Stock()
+        {
+
+        }
+
         public Stock(Produit prod, int nb_stock)
         {
             stock_produit = new Dictionary<Produit, int>();

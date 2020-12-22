@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace TP7
+namespace TP8
 {
     class Program
     {

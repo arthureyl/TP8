@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 
-namespace TP7
+namespace TP8
 {
     public class Etudiant : Client
     {

@@ -11,7 +11,7 @@ namespace TP8
         {
             FormuleRepas formulRepas = new FormuleRepas();
             Boisson soda = new Boisson("soda", 12, 13, 12);
-            Nourriture barreChocolatee = new Nourriture("Barre chocolatee", 15, 16, 1);
+            Nourriture barreChocolatee = new Nourriture("gateau", 15, 16, 1);
             formulRepas = AjouterBoisson(formulRepas,soda);
             formulRepas = AjouterDessert(formulRepas,barreChocolatee);
             stock.ChangeStockValue(soda.Name, -1);
@@ -23,7 +23,7 @@ namespace TP8
         {
             FormuleRepas formulRepas = new FormuleRepas();
             Boisson soda = new Boisson("soda", 12, 13, 12);
-            Nourriture sandwich = new Nourriture("Jambon beurre", 15, 16, 1);
+            Nourriture sandwich = new Nourriture("sandwich", 15, 16, 1);
             formulRepas = AjouterBoisson(formulRepas, soda);
             formulRepas = AjouterDessert(formulRepas, sandwich);
             stock.ChangeStockValue(soda.Name, -1);
@@ -35,8 +35,8 @@ namespace TP8
         {
             FormuleRepas formulRepas = new FormuleRepas();
             Boisson soda = new Boisson("soda", 12, 13, 12);
-            Nourriture sandwich = new Nourriture("Jambon beurre", 15, 16, 1);
-            Nourriture barreChocolatee = new Nourriture("Barre chocolatee", 15, 16, 1);
+            Nourriture sandwich = new Nourriture("sandwich", 15, 16, 1);
+            Nourriture barreChocolatee = new Nourriture("gateau", 15, 16, 1);
             formulRepas = AjouterBoisson(formulRepas, soda);
             formulRepas = AjouterDessert(formulRepas, barreChocolatee);
             formulRepas = AjouterPlatPrincipal(formulRepas, sandwich);

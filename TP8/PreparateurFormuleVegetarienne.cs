@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TP8
 {
-    class PreparateurFormuleVegetarienne
+    public class PreparateurFormuleVegetarienne
     {
 
 
@@ -12,7 +12,7 @@ namespace TP8
         {
             FormuleRepas formulRepas = new FormuleRepas();
             Boisson soda = new Boisson("soda", 12, 13, 12);
-            Nourriture gateau = new Nourriture("Gateau", 15, 16, 1);
+            Nourriture gateau = new Nourriture("gateau", 15, 16, 1);
             formulRepas = AjouterBoisson(formulRepas, soda);
             formulRepas = AjouterDessert(formulRepas, gateau);
             return formulRepas;
@@ -22,7 +22,7 @@ namespace TP8
         {
             FormuleRepas formulRepas = new FormuleRepas();
             Boisson soda = new Boisson("soda", 12, 13, 12);
-            Nourriture sandwich = new Nourriture("Jambon beurre", 15, 16, 1);
+            Nourriture sandwich = new Nourriture("sandwich", 15, 16, 1);
             formulRepas = AjouterBoisson(formulRepas, soda);
             formulRepas = AjouterDessert(formulRepas, sandwich);
             return formulRepas;
@@ -32,8 +32,8 @@ namespace TP8
         {
             FormuleRepas formulRepas = new FormuleRepas();
             Boisson soda = new Boisson("soda", 12, 13, 12);
-            Nourriture sandwich = new Nourriture("Jambon beurre", 15, 16, 1);
-            Nourriture gateau = new Nourriture("Gateau", 15, 16, 1);
+            Nourriture sandwich = new Nourriture("sandwich", 15, 16, 1);
+            Nourriture gateau = new Nourriture("gateau", 15, 16, 1);
             formulRepas = AjouterBoisson(formulRepas, soda);
             formulRepas = AjouterDessert(formulRepas, gateau);
             formulRepas = AjouterPlatPrincipal(formulRepas, sandwich);
